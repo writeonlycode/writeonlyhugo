@@ -6,7 +6,7 @@
       {{ range $i, $e := (.Paginate $mainPages).Pages }}
         <article class="card {{ if not $i }}border-top-0{{ end }} border-bottom-0 border-start-0 border-end-0 pt-3">
           <div class="card-header border-0 bg-white">
-            <h2 class="text-center text-uppercase my-0 py-0"><a class="text-decoration-none fw-bold" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <h2 class="display-2 text-center text-uppercase my-0 py-0"><a class="text-decoration-none fw-bold" href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <div class="text-center text-muted">
               {{ with .Params.Author }}
                 <span class="small mx-2">
@@ -14,6 +14,14 @@
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                   </svg>
                   {{ . }}
+                </span>
+              {{ end }}
+              {{ with .Date }}
+                <span class="small mx-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                  {{ .Format "January 2, 2006" }}
                 </span>
               {{ end }}
               {{ with .ReadingTime }}
