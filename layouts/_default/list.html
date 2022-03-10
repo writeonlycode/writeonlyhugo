@@ -3,10 +3,10 @@
   <div class="row justify-content-center">
     <div class="col-12 mw-md mh-100">
       {{ range $i, $e := (.Paginate .RegularPages).Pages }}
-        <article class="card {{ if not $i }}border-top-0{{ end }} border-bottom-0 border-start-0 border-end-0 pt-3">
-          <div class="card-header border-0 bg-white">
-            <h2 class="display-2 text-center text-uppercase my-0 py-0"><a class="text-decoration-none fw-bold" href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <div class="text-center text-muted">
+        <article class="py-4">
+          <div class="py-2">
+            <h2 class="display-1 text-center text-uppercase my-0 py-0"><a class="text-decoration-none fw-bold" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="text-center text-muted mb-1">
               {{ with .Params.Author }}
                 <span class="small mx-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -51,7 +51,7 @@
               {{ end }}
             </div>
           </div>
-          <div class="card-body text-center">
+          <div class="text-center py-2">
             {{ .Summary }}
           </div>
         </article>
