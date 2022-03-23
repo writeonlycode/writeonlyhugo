@@ -10,5 +10,5 @@
 <script>{{- $sharedJS.Content | safeJS -}}</script>
 
 <!-- Fonts -->
-{{- $bootstrapIcons := resources.Get "bootstrap-icons/font/bootstrap-icons.scss" -}}
+{{- $bootstrapIcons := resources.Get "bootstrap-icons/font/bootstrap-icons.scss" | resources.ToCSS -}}
 <style type="text/css" media="all">{{ $bootstrapIcons.Content | safeCSS }}</style>
