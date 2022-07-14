@@ -27,6 +27,14 @@ The folder `hugoBasicExample` contains a working version of a website with the
 theme. It includes: the configuration file `config.yaml` and the content folder
 `content` with the usual markdown examples.
 
+## Quick Test
+
+To test the website:
+
+```bash
+cd hugoBasicExample && hugo server --themesDir ../..
+```
+
 ## License 
 
 Write-Only Hugo Theme is licensed under the MIT license.
