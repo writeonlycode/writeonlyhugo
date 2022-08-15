@@ -1,6 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:ital@0;1&display=swap');
+
 .markdown-content {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+
   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
     margin-top: 3rem;
+  }
+
+  p {
+    margin: 1em 0;
+    line-height: 1.75em;
+  }
+
+  blockquote {
+    padding: 0 1em;
+    border-left: .4em solid;
+  }
+
+  pre code {
+    font-size: 1em;
+    background-color: inherit;
+    padding: 0;
+  }
+
+  ul, ol {
+    padding-left: 1em;
+
+    li {
+      position: relative;
+      margin: 0.4em 0;
+    }
+
+    p {
+      margin: 0.4em 0;
+    }
+
+    input {
+      position: absolute;
+      left: -1em;
+
+      appearance: none;
+
+      &::before {
+        content: '\2610';
+
+        color: $light;
+        background-color: $dark;
+      }
+
+      &:checked::before {
+        content: '\2611';
+      }
+    }
+  }
+
+  code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8em;
+
+    padding: 0.2em 0.4em;
+    vertical-align: middle;
+
+    background-color: #202020;
+    border-radius: 0.4em;
   }
 
   img {
@@ -11,6 +75,7 @@
   }
 
   table {
+
     --#{$variable-prefix}table-bg: #{$table-bg};
     --#{$variable-prefix}table-accent-bg: #{$table-accent-bg};
     --#{$variable-prefix}table-striped-color: #{$table-striped-color};
@@ -20,6 +85,7 @@
     --#{$variable-prefix}table-hover-color: #{$table-hover-color};
     --#{$variable-prefix}table-hover-bg: #{$table-hover-bg};
 
+    margin: 1em 0;
     width: 100%;
     margin-bottom: $spacer;
     color: $table-color;
@@ -57,9 +123,5 @@
     border-radius: $spacer;
     color: $light;
     background-color: $dark;
-  }
-
-  ol, ul {
-    font-family: $font-family-sans-serif;
   }
 }
