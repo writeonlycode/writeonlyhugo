@@ -1,8 +1,0 @@
-<div class="alert {{ with .Get 0 }}{{ printf "alert-%s" . }}{{ else }}alert-secondary{{ end }} d-flex align-items-center">
-  {{ with .Get "icon" }}
-    {{ partial "bs-icon" . }}
-  {{ end }}
-  <div class="">
-    {{ .Inner }}
-  </div>
-</div>
