@@ -5,4 +5,5 @@ module:
 
   imports:
     - path: "gitlab.com/writeonlyhugo/hugo-module-bootstrap"
+    - path: "gitlab.com/writeonlyhugo/hugo-module-bootstrap-icons"
 
