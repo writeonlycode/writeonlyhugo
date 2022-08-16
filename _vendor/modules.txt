@@ -1,4 +1,4 @@
-# gitlab.com/writeonlyhugo/hugo-module-bootstrap v0.0.0-20220726041558-c212901b4c22
+# gitlab.com/writeonlyhugo/hugo-module-bootstrap v0.0.0-20220816084509-b8f26558d42c
 # github.com/twbs/bootstrap v5.2.0+incompatible
 # github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000
 # gitlab.com/writeonlyhugo/hugo-module-bootstrap-icons v0.0.0-20220504151031-e4d7cba5d59b

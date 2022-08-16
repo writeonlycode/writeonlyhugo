@@ -1,11 +1,11 @@
 // scss-docs-start import-stack
 // Configuration
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/maps";
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/maps";
 
-@import "bootstrap/scss/utilities";
+@import "../bootstrap/scss/utilities";
 
 $utilities: map-merge(
   $utilities,
@@ -32,26 +32,26 @@ $utilities: map-merge(
 );
 
 // Layout & components
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
-@import "bootstrap/scss/type";
-@import "bootstrap/scss/images";
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/tables";
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/containers";
+@import "../bootstrap/scss/grid";
+@import "../bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
 // @import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
+@import "../bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
-@import "bootstrap/scss/nav";
-@import "bootstrap/scss/navbar";
+@import "../bootstrap/scss/nav";
+@import "../bootstrap/scss/navbar";
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/breadcrumb";
-@import "bootstrap/scss/pagination";
-@import "bootstrap/scss/badge";
-@import "bootstrap/scss/alert";
+@import "../bootstrap/scss/pagination";
+@import "../bootstrap/scss/badge";
+@import "../bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/list-group";
 // @import "bootstrap/scss/close";
@@ -68,6 +68,6 @@ $utilities: map-merge(
 // @import "bootstrap/scss/helpers";
 
 // Utilities
-@import "bootstrap/scss/utilities/api";
+@import "../bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
