@@ -1,3 +1,7 @@
+markup:
+  highlight:
+    style: "dracula"
+
 module:
   module.hugoVersion:
     min: "0.92.0"

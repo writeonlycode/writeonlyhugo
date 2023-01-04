@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:ital@0;1&display=swap');
-
 .markdown-content {
-  font-family: 'Fira Sans', sans-serif;
   font-size: 20px;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', sans-serif;
     margin-top: 3rem;
   }
 
@@ -114,7 +110,7 @@
 
     // Highlight border color between thead, tbody and tfoot.
     > :not(:first-child) {
-      border-top: (2 * $table-border-width) solid $table-group-separator-color;
+      // border-top: (2 * $table-border-width) solid $table-group-separator-color;
     }
   }
 
