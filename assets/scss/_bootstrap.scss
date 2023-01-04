@@ -30,8 +30,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 960px,
-  xxl: 960px
+  xl: 962px,
+  xxl: 964px
 ) !default;
 
 
@@ -55,6 +55,7 @@ $container-max-widths: (
 @import "../bootstrap/scss/grid";
 @import "../bootstrap/scss/helpers";
 
+@import "../bootstrap/scss/card";
 @import "../bootstrap/scss/tables";
 @import "../bootstrap/scss/transitions";
 @import "../bootstrap/scss/nav";

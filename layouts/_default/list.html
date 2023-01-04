@@ -2,7 +2,7 @@
 <main class="container py-5 flex-grow-1">
   <div class="row justify-content-center">
     <div class="col-12 mh-100">
-      {{ $pagination := .Paginate .RegularPages }}
+      {{ $pagination := .Paginate .Pages }}
       {{ range $pagination.Pages }}
         {{ partial "shared/post-item.html" . }}
       {{ end }}
