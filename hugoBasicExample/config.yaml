@@ -1,9 +1,8 @@
-baseURL: "https://www.example.com/"
+baseURL: "/"
 theme: "writeonlyhugo-theme"
 languageCode: "en-us"
 
 title: "Up Business"
-
 # googleAnalytics: ""
 
 summaryLength: 20
