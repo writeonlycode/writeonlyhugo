@@ -1,4 +1,4 @@
-module gitlab.com/writeonlyhugo/writeonlyhugo-theme
+module github.com/writeonlycode/writeonlyhugo
 
 go 1.17
 
