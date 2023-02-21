@@ -1,8 +1,7 @@
-{{ define "main" }}
 <main class="py-5 flex-grow-1">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 mh-100">
+      <div class="col-12 col-xl-8">
         <div class="py-4">
           <div class="py-2">
             <h1 class="display-1 text-center text-uppercase fw-bold text-primary">
@@ -11,13 +10,11 @@
             {{ partial "shared/post-meta" . }}
             {{ partial "shared/post-categories" . }}
           </div>
-          <div class="lead text-center py-3">
-            {{ with .Description }}
+          {{ with .Description }}
+            <div class="lead text-center py-3">
               {{ . }}
-            {{ else }}
-              {{ .Summary }}
-            {{ end }}
-          </div>
+            </div>
+          {{ end }}
           {{ with .Content }}
             <div class="markdown-content py-2">
               {{ . }}
@@ -32,9 +29,9 @@
   <div class="container">
     {{ $sections := .Pages }}
     {{ range $sections }}
-      <div class="row g-4 pb-5 mb-5 align-items-stretch">
+      <div class="row g-4 pb-5 my-5 align-items-stretch">
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 lead text-center py-3">
+          <div class="col-12 col-xl-8 lead text-center py-3">
             <h2 class="display-6 text-center">
               {{ .Title }}
             </h2>
@@ -42,22 +39,22 @@
         </div>
         {{ with .Params.description }}
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 lead text-center py-3">
+            <div class="col-12 col-xl-8 lead text-center py-3">
               {{ . }}
             </div>
           </div>
         {{ end }}
         {{ with .Content }}
           <div class="row justify-content-center">
-            <div class="markdown-content col-12 col-lg-8">
+            <div class="markdown-content col-12 col-xl-8">
               {{ . }}
             </div>
           </div>
         {{ end }}
         <div class="row g-4">
-          {{ $cards := .Resources.ByType "page" }}
+          {{ $cards := .Pages }}
           {{ range $cards }}
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-xl-6">
               <div class="card">
                 <div class="card-body">
                   <h3 class="h4 card-title">
@@ -73,23 +70,5 @@
         </div>
       </div>
     {{ end }}
-    <div class="row g-4">
-      {{ $cards := .Resources.ByType "page" }}
-      {{ range $cards }}
-        <div class="col-12 col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="h4 card-title">
-                {{ .Title }}
-              </h3>
-              <div class="card-text markdown-content">
-                {{ .Content }}
-              </div>
-            </div>
-          </div>
-        </div>
-      {{ end }}
-      </div>
   </div>
 </main>
-{{ end }}

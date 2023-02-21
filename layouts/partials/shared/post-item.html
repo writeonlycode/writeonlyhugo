@@ -9,6 +9,10 @@
     {{ partial "shared/post-categories" . }}
   </div>
   <div class="lead text-center py-2">
-    {{ .Summary }}
+    {{ with .Description }}
+      {{ . }}
+    {{ else }}
+      {{ .Summary }}
+    {{ end }}
   </div>
 </article>

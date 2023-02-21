@@ -115,9 +115,10 @@
   }
 
   pre {
+    margin: $spacer 0;
     padding: $spacer;
     border-radius: $spacer;
     color: $light;
-    background-color: $dark;
+    background-color: $nord1 !important;
   }
 }

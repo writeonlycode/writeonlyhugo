@@ -2,8 +2,14 @@
 <html lang="en" data-bs-theme="dark">
   {{ partial "head/head.html" . }}
   <body class="d-flex flex-column min-vh-100">
-    {{- partial "shared/header.html" . -}}
+    {{ if not .Site.Params.disableHeader }}
+      {{- partial "shared/header.html" . -}}
+    {{ end }}
+
     {{- block "main" . -}}{{- end -}}
-    {{- partial "shared/footer.html" . -}}
+
+    {{ if not .Site.Params.disableFooter }}
+      {{- partial "shared/footer.html" . -}}
+    {{ end }}
   </body>
 </html>

@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ if (eq (len .Ancestors) 1) }}
+    <main class="container py-5 flex-grow-1">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 mh-100">
+          {{ $pagination := .Paginate .Pages }}
+          {{ range $pagination.Pages }}
+            {{ partial "shared/post-item.html" . }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="row">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </main>
+  {{ else }}
+    {{ partial "cheatsheets/single" . }}
+  {{ end }}
+{{ end }}
