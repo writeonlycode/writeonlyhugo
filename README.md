@@ -2,11 +2,11 @@
 
 Write-Only Hugo is a simple, clean and straightforward blog theme.
 
-![Screenshot](https://github.com/writeonlycode/writeonlyhugo/blob/d82bde738e5db41b776b71faace560f1a8e4ff95/images/screenshot.png?raw=true)
+![Screenshot](https://raw.githubusercontent.com/writeonlycode/writeonlyhugo/master/images/screenshot.png)
 
 ## Live Demo
 
-See [here](https://writeonlyhugo.gitlab.io/writeonlyhugo-demo/).
+See [here](https://writeonlycode.github.io/writeonlyhugo/).
 
 ## Quick Start
 
@@ -14,13 +14,13 @@ If you are creating a new website, the quickest way to get up and running is to
 clone the demo website.
 
 ```bash
-git clone https://gitlab.com/writeonlyhugo/writeonlyhugo-demo.git
+git clone https://github.com/writeonlycode/writeonlyhugo.git
 ```
 
 Alternatively, you can clone just the theme to your theme folder:
 
 ```bash
-git clone https://gitlab.com/writeonlyhugo/writeonlyhugo-theme.git themes/up-business-theme
+git clone https://github.com/writeonlycode/writeonlyhugo.git themes/writeonlyhugo-theme
 ```
 
 The folder `hugoBasicExample` contains a working version of a website with the

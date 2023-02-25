@@ -20,8 +20,3 @@ taxonomies:
   categories: "categories"
   series: "series"
   tags: "tags"
-
-modules:
-  imports:
-    - path: "gitlab.com/writeonlyhugo/writeonlyhugo-theme"
-

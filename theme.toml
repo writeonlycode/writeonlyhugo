@@ -1,6 +1,6 @@
 name = "Write-Only Hugo Theme"
 license = "MIT"
-licenselink = "https://hub.com/writeonlycode/writeonlyhugo/-/blob/master/LICENSE"
+licenselink = "https://github.com/writeonlycode/writeonlyhugo/blob/master/LICENSE"
 description = "A simple, clean and straightforward blog theme."
 
 homepage = "https://github.com/writeonlycode/writeonlyhugo/"
