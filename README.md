@@ -2,6 +2,7 @@
 
 Write-Only Hugo is a simple, clean and straightforward blog theme.
 
+
 ![Screenshot](https://github.com/writeonlycode/writeonlyhugo/blob/d82bde738e5db41b776b71faace560f1a8e4ff95/images/screenshot.png?raw=true)
 
 ## Live Demo
