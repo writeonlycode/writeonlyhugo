@@ -1,4 +1,4 @@
-baseURL: "https://www.example.com/"
+baseURL: "https://writeonlycode.github.io/writeonlyhugo/"
 theme: "github.com/writeonlycode/writeonlyhugo"
 languageCode: "en-us"
 
